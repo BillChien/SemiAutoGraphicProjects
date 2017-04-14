@@ -180,7 +180,6 @@ body {
 
   #symbol:active{
     -webkit-animation: shrink2 0.5s 1;
-    -webkit-animation: return 0.5s 1;
   }
 
   #copyright{
