@@ -9,6 +9,8 @@ body {
   transition-delay: 0.2s;
 }
 
+
+
 #maincontainer {
   display:flex;
   width:100%;
@@ -129,7 +131,6 @@ body {
   right:0;
   bottom:0;
   height:10vh;
-  z-index: 12;
   font-family: Pressura-Mono, monospace;
   font-size: 15px;
   text-align: center;

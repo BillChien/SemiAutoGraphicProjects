@@ -79,4 +79,4 @@ function generate(){
     elFooter.style.color = 'white';
   };
 
-}
+};
