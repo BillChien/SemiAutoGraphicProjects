@@ -172,15 +172,17 @@ body {
     margin-right: -10px;
   }
 
-  #symbol:hover{
+  #symbol:active{
     height: 40px;
     margin-top: -8px;
     -webkit-animation: return 0.5s 1;
   }
 
-  #symbol:active{
-    -webkit-animation: shrink2 0.5s 1;
+  #symbol:hover{
+    height: 40px;
+    margin-top: -8px;
   }
+
 
   #copyright{
     font-size: 10px;
