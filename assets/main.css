@@ -171,7 +171,6 @@ body {
     height: 40px;
     margin-right: -10px;
     -webkit-animation: breath 4s infinite cubic-bezier(0.6, 0.08, 0.54, 0.94);
-    transition: all 0.2s cubic-bezier(0.6, 0.08, 0.54, 0.94);
   }
 
   #symbol:hover{
@@ -182,7 +181,6 @@ body {
 
   #symbol:active{
     -webkit-animation: shrink2 0.5s 1;
-    -webkit-animation: return 0.5s 1;
   }
 
   #copyright{
