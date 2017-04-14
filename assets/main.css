@@ -173,14 +173,11 @@ body {
     -webkit-animation: breath 4s infinite cubic-bezier(0.6, 0.08, 0.54, 0.94);
   }
 
-  #symbol:hover{
+
+  #symbol:active{
     height: 60px;
     margin-top: -8px;
     -webkit-animation: return 0.5s 1;
-  }
-
-  #symbol:active{
-    -webkit-animation: shrink2 0.5s 1;
   }
 
   #copyright{
