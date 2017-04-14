@@ -1,0 +1,99 @@
+@font-face {
+font-family: Pressura-Mono;
+src: url('fonts/GT-Pressura-Mono-Regular.woff') format('woff');
+}
+
+body {
+  background-color: #444444;
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+#maincontainer {
+  display:flex;
+  width:100%;
+  height:100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#prompt {
+  position: relative;
+  min-height: 10vh;
+  margin-top: 80px;
+  word-spacing: -0.2em;
+  letter-spacing: -0.025em;
+  margin-left:20%;
+  margin-right:20%;
+  text-align: center;
+  font-family: Pressura-Mono, monospace;
+  font-size: 35px;
+  color:#ffe433;
+  transition: all 0.2s ease;
+  whitespace: wrap;
+}
+
+#symbol_container {
+  position: relative;
+  height: 200px;
+  margin-top: 5vh;
+  transition: all 0.2s ease;
+  left:0;
+  right:0;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+
+#button {
+  height:50px;
+  width:80px;
+  margin-left: -10px;
+  cursor:pointer;
+}
+
+#symbol {
+  position: relative;
+  height: 60px;
+  cursor:pointer;
+  -webkit-animation: breath 4s infinite cubic-bezier(0.6, 0.08, 0.54, 0.94);
+  transition: all 0.2s cubic-bezier(0.6, 0.08, 0.54, 0.94);
+  fill: #ffe433;
+}
+
+@-webkit-keyframes breath {
+  0% {-webkit-transform: scale(1);}
+  50% {-webkit-transform: scale(1.3);}
+  100% {-webkit-transform: scale(1);}
+}
+
+@-webkit-keyframes shrink {
+  0% {height: 80px;margin-top: -10px;}
+  50% {height: 60px;margin-top: 0px;}
+  100% {height: 80px;margin-top: -10px;}
+}
+
+#symbol:hover{
+  height: 80px;
+  margin-top: -10px;
+  -webkit-animation: return 0.5s 1;
+}
+
+
+
+#symbol:active{
+  -webkit-animation: shrink 0.5s 1;
+}
+
+
+@-webkit-keyframes return {
+  0% {-webkit-transform: translateX(0px);
+  opacity:1}
+  50% {-webkit-transform: translateX(100%);
+  opacity:0}
+  51% {-webkit-transform: translateX(-100%);
+  opacity:0}
+  100% {-webkit-transform: translateX(0px);
+  opacity:1}
+}
