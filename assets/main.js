@@ -41,7 +41,7 @@ function generate(){
     elPrompt.style.color = '#ceff00';
     elSymbol.style.fill = '#ceff00';
     elCopyright.style.color = 'white';
-    elFooter.style.color = '#5e5e5e';
+    elFooter.style.color = '#777777';
   };
 
   if (randbgcolors == '#00123f') {

@@ -157,15 +157,14 @@ body {
   }
 
   #symbol_container {
-    margin-top: 3vh;
-    margin-left: 20px;
+    margin-top: 5vh;
   }
 
   #prompt {
     font-size: 23px;
     margin-left:10%;
     margin-right:10%;
-    min-height: 6vh;
+    min-height: 5vh;
   }
 
   #symbol{
