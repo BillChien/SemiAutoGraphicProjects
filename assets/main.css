@@ -81,9 +81,7 @@ body {
 }
 
 #symbol:hover{
-  height: 80px;
-  margin-top: -10px;
-  -webkit-animation: return 0.5s 1;
+  ≈
 }
 
 
@@ -174,18 +172,21 @@ body {
 
   #symbol:active{
     height: 40px;
-    margin-top: -8px;
     -webkit-animation: return 0.5s 1;
   }
 
-  #symbol:hover{
-    height: 40px;
-    margin-top: -8px;
-  }
 
 
   #copyright{
     font-size: 10px;
   }
 
+}
+
+@media not (max-width: 700px){
+  #symbol:hover{
+    height: 40px;
+    margin-top: -8px;
+    -webkit-animation: return 0.5s 1;
+  }
 }
