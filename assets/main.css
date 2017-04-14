@@ -175,7 +175,6 @@ body {
 
 
   #symbol:active{
-    height: 60px;
     margin-top: -8px;
     -webkit-animation: return 0.5s 1;
   }
