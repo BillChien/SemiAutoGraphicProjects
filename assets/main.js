@@ -73,8 +73,8 @@ function generate(){
   };
 
   if (randbgcolors == '#00ff8b') {
-    elPrompt.style.color = '2d2d2d';
-    elSymbol.style.fill = '2d2d2d';
+    elPrompt.style.color = '#2d2d2d';
+    elSymbol.style.fill = '#2d2d2d';
     elCopyright.style.color = 'black';
     elFooter.style.color = 'white';
   };
