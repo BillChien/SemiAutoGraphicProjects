@@ -172,21 +172,18 @@ body {
     margin-right: -10px;
   }
 
-  #symbol:active{
+  #symbol:hover{
     height: 40px;
+    margin-top: -8px;
     -webkit-animation: return 0.5s 1;
   }
 
+  #symbol:active{
+    -webkit-animation: shrink2 0.5s 1;
+  }
 
   #copyright{
     font-size: 10px;
   }
 
-}
-
-@media not (max-width: 700px) {
-  #symbol:hover{
-  height: 80px;
-  margin-top: -10px;
-  -webkit-animation: return 0.5s 1;}
 }
