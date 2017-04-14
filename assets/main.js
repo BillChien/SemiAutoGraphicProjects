@@ -1,6 +1,8 @@
 //calling div prompt
 var elPrompt = document.getElementById('prompt');
 var elSymbol = document.getElementById('symbol');
+var elCopyright = document.getElementById('copyright');
+var elFooter = document.getElementById('footer');
 
 
 //All the adjective
@@ -29,40 +31,52 @@ function generate(){
 
   var i = 0;
   var timer = setInterval(function(){
-      elPrompt.textContent+=newPrompt[i];i++;
-      if(i>newPrompt.length-1){clearInterval(timer)}
+    elPrompt.textContent+=newPrompt[i];i++;
+    if(i>newPrompt.length-1){clearInterval(timer)}
   },50)
 
 
   //change text color based on background color.
   if (randbgcolors == '#6d30b5') {
     elPrompt.style.color = '#ceff00';
-    elSymbol.style.fill = '#ceff00'
+    elSymbol.style.fill = '#ceff00';
+    elCopyright.style.color = 'white';
+    elFooter.style.color = '#5e5e5e';
   };
 
   if (randbgcolors == '#00123f') {
     elPrompt.style.color = '#dd1064';
     elSymbol.style.fill = '#dd1064';
+    elCopyright.style.color = 'white';
+    elFooter.style.color = '#5e5e5e';
   };
 
   if (randbgcolors == '#290059') {
     elPrompt.style.color = '#fff800';
     elSymbol.style.fill = '#fff800';
+    elCopyright.style.color = 'white';
+    elFooter.style.color = '#5e5e5e';
   };
 
   if (randbgcolors == '#ffd400') {
     elPrompt.style.color = '#c40000';
     elSymbol.style.fill = '#c40000';
+    elCopyright.style.color = 'black';
+    elFooter.style.color = 'white';
   };
 
   if (randbgcolors == '#191919') {
     elPrompt.style.color = '#00e1ff';
     elSymbol.style.fill = '#00e1ff';
+    elCopyright.style.color = 'white';
+    elFooter.style.color = '#5e5e5e';
   };
 
   if (randbgcolors == '#00ff8b') {
     elPrompt.style.color = '2d2d2d';
     elSymbol.style.fill = '2d2d2d';
+    elCopyright.style.color = 'black';
+    elFooter.style.color = 'white';
   };
 
 }
