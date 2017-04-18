@@ -7,18 +7,83 @@ body {
   background-color: #444444;
   transition: all 0.5s ease;
   transition-delay: 0.2s;
+  overflow: hidden;
+}
+
+a {
+  color:#aaaaaa;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-bottom: 1.5px #aaaaaa dotted;
+}
+
+a:hover {
+  color:#ffe433;
+  border:0;
 }
 
 
-
 #maincontainer {
+  transition: all 0.2s ease;
+  position: absolute;
   display:flex;
   width:100%;
   height:100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 0 !important;
 }
+
+#about, #share {
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.2s ease;
+}
+
+
+.appear {
+  opacity: 1 !important;
+}
+
+.fade {
+  opacity: 0 !important;
+}
+
+#intro {
+  position: absolute;
+  display:flex;
+  width:100%;
+  height:100vh;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: all 0.2s ease;
+  opacity:0;
+  z-index:-2;
+}
+
+#wordmark {
+  width:600px;
+  margin-left: 20vw;
+  margin-bottom: 10vw;
+  fill:#ffe433;
+}
+
+#introtext {
+  width:70vw;
+  color:#aaaaaa;
+  padding-left: 8vw;
+  padding-right: 20vw;
+  font-family: Pressura-Mono, monospace;
+  font-size: 18px;
+  margin-bottom: 10vw;
+}
+
 
 #prompt {
   position: relative;
@@ -26,8 +91,8 @@ body {
   margin-top: 80px;
   word-spacing: -0.2em;
   letter-spacing: -0.025em;
-  margin-left:20%;
-  margin-right:20%;
+  margin-left:18%;
+  margin-right:18%;
   text-align: center;
   font-family: Pressura-Mono, monospace;
   font-size: 35px;
@@ -46,6 +111,7 @@ body {
   text-align: center;
   display:flex;
   justify-content: center;
+  cursor:pointer;
 }
 
 #button {
@@ -91,6 +157,7 @@ body {
 
 #symbol:active{
   -webkit-animation: shrink 0.5s 1;
+  cursor:pointer;
 }
 
 
@@ -139,15 +206,35 @@ body {
   transition: all 0.2s ease;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
 
   #prompt {
     font-size: 26px;
     min-height: 6vh;
+    margin-left:15%;
+    margin-right:15%;
   }
 
   #symbol_container {
     margin-top: 4vh;
+  }
+
+  #intro {
+    flex-direction:column;
+  }
+
+  #wordmark {
+    width:250px;
+    float: left;
+    margin-left: 200px;
+    margin-right:65%;
+    margin-bottom: 0;
+  }
+
+  #introtext {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 20px;
   }
 
 }
@@ -184,6 +271,19 @@ body {
 
   #copyright{
     font-size: 10px;
+  }
+
+  #wordmark {
+    width: 180px;
+    margin-left: 180px;
+    margin-right:70%;
+  }
+
+  #introtext {
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 20px;
+    font-size:15px;
   }
 
 }
