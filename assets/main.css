@@ -55,7 +55,7 @@ a:hover {
 #intro {
   position: absolute;
   display:flex;
-  width:101vw;
+  width:103vw;
   height:100vh;
   flex-direction:row;
   align-items: center;
@@ -227,7 +227,7 @@ a:hover {
   #wordmark {
     width:250px;
     float: left;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-right:65%;
     margin-bottom: 0;
   }
@@ -276,7 +276,7 @@ a:hover {
 
   #wordmark {
     width: 180px;
-    margin-left: 180px;
+    margin-left: 190px;
     margin-right:70%;
   }
 
