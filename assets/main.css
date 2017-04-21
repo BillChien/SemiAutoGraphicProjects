@@ -8,6 +8,7 @@ body {
   transition: all 0.5s ease;
   transition-delay: 0.2s;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch ;
 }
 
 a {
@@ -353,6 +354,7 @@ a:hover {
 
   body {
     overflow-y:hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   #footer {
