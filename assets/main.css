@@ -350,6 +350,11 @@ a:hover {
 }
 
 @media (max-width: 700px){
+
+  body {
+    overflow-y:hidden;
+  }
+
   #footer {
     top:0;
   }
