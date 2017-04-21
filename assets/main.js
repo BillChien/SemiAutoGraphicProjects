@@ -7,63 +7,6 @@ var elAbout = document.getElementById("about");
 var elShare = document.getElementById("share");
 var elIntrotext = document.getElementById("introtext");
 
-//reveal about
-function change1(){
-
-    if (elAbout.textContent=="about") {
-      elAbout.textContent = "close";
-      elAbout.style.color = '#ffe433';
-      $('#intro').addClass('appear');
-      $('#maincontainer').addClass('fade');
-      $('#share').addClass('fade');
-      $('#intro').css("z-index", 3);
-      $('#footer').css("z-index", 4);
-      $('#copyright').css("z-index", 3);
-
-    }
-    else {
-      elAbout.textContent = "about";
-      $('#intro').removeClass('appear');
-      $('#maincontainer').removeClass('fade');
-      $('#share').removeClass('fade');
-      $('#intro').css("z-index", -2);
-      elAbout.style.color = '';
-    };
-
-};
-
-//reveal about
-function change2(){
-
-    if (elShare.textContent=="input") {
-      elShare.textContent = "close";
-      elShare.style.color = '#ffe433';
-      document.body.style.overflowY = 'visible';
-      $('#input').addClass('appear');
-      $('#maincontainer').addClass('fade');
-      $('#about').addClass('fade');
-      $('#input').css("z-index", 3);
-      $('#footer').css("z-index", 4);
-      $('#copyright').css("z-index", 3);
-      document.body.style.backgroundColor = '#444444';
-      elPrompt.style.color = '#ffe433';
-      elSymbol.style.fill = '#ffe433';
-      elCopyright.style.color = 'white';
-      elFooter.style.color = '#ffe433';
-    }
-    else {
-      elShare.textContent = "input";
-      document.body.style.overflowY = 'hidden';
-      $('#input').removeClass('appear');
-      $('#maincontainer').removeClass('fade');
-      $('#about').removeClass('fade');
-      $('#input').css("z-index", -2);
-      elShare.style.color = '';
-      window.scrollTo(0, 0);
-    };
-
-};
-
 //All the adjective
 var adjective = ['a porous','a matte','a static','a terrifying','a boring','an un-designed','a delicious','a festive','a subtle','a gross','an ugly','a beautiful','a repulsive','a hideous','a delectable','a whimsical','a quizzical','a radical','a mossy','a broken','a tender','an adorable','a nasty','a shocking','a soft','an old','a charismatic','a cute','a gigantic','a funny','a delicate','a psychedelic','an expressive','a confusing','an amped','a strange','a foreign','a tinted','an organic','an austere','a quirky','a gentle'];
 
@@ -173,5 +116,62 @@ function generate(){
     elCopyright.style.color = 'black';
     elFooter.style.color = 'white';
   };
+
+};
+
+//reveal about
+function change1(){
+
+    if (elAbout.textContent=="about") {
+      elAbout.textContent = "close";
+      elAbout.style.color = '#ffe433';
+      $('#intro').addClass('appear');
+      $('#maincontainer').addClass('fade');
+      $('#share').addClass('fade');
+      $('#intro').css("z-index", 3);
+      $('#footer').css("z-index", 4);
+      $('#copyright').css("z-index", 3);
+
+    }
+    else {
+      elAbout.textContent = "about";
+      $('#intro').removeClass('appear');
+      $('#maincontainer').removeClass('fade');
+      $('#share').removeClass('fade');
+      $('#intro').css("z-index", -2);
+      elAbout.style.color = '';
+    };
+
+};
+
+//reveal about
+function change2(){
+
+    if (elShare.textContent=="input") {
+      elShare.textContent = "close";
+      elShare.style.color = '#ffe433';
+      document.body.style.overflowY = 'visible';
+      $('#input').addClass('appear');
+      $('#maincontainer').addClass('fade');
+      $('#about').addClass('fade');
+      $('#input').css("z-index", 3);
+      $('#footer').css("z-index", 4);
+      $('#copyright').css("z-index", 3);
+      document.body.style.backgroundColor = '#444444';
+      elPrompt.style.color = '#ffe433';
+      elSymbol.style.fill = '#ffe433';
+      elCopyright.style.color = 'white';
+      elFooter.style.color = '#ffe433';
+    }
+    else {
+      elShare.textContent = "input";
+      document.body.style.overflowY = 'hidden';
+      $('#input').removeClass('appear');
+      $('#maincontainer').removeClass('fade');
+      $('#about').removeClass('fade');
+      $('#input').css("z-index", -2);
+      elShare.style.color = '';
+      window.scrollTo(0, 0);
+    };
 
 };
