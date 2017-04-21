@@ -15,12 +15,38 @@ a {
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
-  border-bottom: 1.5px #aaaaaa dotted;
 }
 
 a:hover {
   color:#ffe433;
-  border:0;
+}
+
+.post {
+  width:20vw;
+  height:20vw;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+#post1 {background-image: url("images/1.png");}
+#post2 {background-image: url("images/2.png");}
+#post3 {background-image: url("images/3.png");}
+#post4 {background-image: url("images/4.png");}
+#post5 {background-image: url("images/5.png");}
+
+#post1:hover {background-image: url("images/y1.png");}
+#post2:hover {background-image: url("images/y2.png");}
+#post3:hover {background-image: url("images/y3.png");}
+#post4:hover {background-image: url("images/y4.png");}
+#post5:hover {background-image: url("images/y5.png");}
+
+.post:active {
+  transform: scale(0.95);
 }
 
 
@@ -37,10 +63,26 @@ a:hover {
   overflow: hidden;
 }
 
-#about, #share {
+.underline, #about, #share {
   cursor: pointer;
   z-index: 99;
   transition: all 0.2s ease;
+  display:inline-block;
+}
+
+.underline:after {
+  display:block;
+  line-height: 10px;
+  margin: -2px 0;
+  content: '';
+  border-bottom: solid 2px #ffe433;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin:100% 50%
+}
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin:0 50%;
 }
 
 
@@ -52,7 +94,7 @@ a:hover {
   opacity: 0 !important;
 }
 
-#intro {
+#intro, #input {
   position: absolute;
   display:flex;
   width:103vw;
@@ -66,7 +108,11 @@ a:hover {
   transition: all 0.2s ease;
   opacity:0;
   z-index:-2;
-  overflow: hidden;
+}
+
+#input{
+  margin-bottom:10vh ;
+  transition: all 0.2s ease;
 }
 
 #wordmark {
@@ -74,6 +120,24 @@ a:hover {
   margin-left: 20vw;
   margin-bottom: 10vw;
   fill:#ffe433;
+}
+
+#instalogo {
+  width:100px;
+  margin-left: 20vw;
+  margin-bottom: 10vw;
+  -webkit-animation: breath 4s infinite cubic-bezier(0.6, 0.08, 0.54, 0.94);
+  transition: all 0.2s cubic-bezier(0.6, 0.08, 0.54, 0.94);
+}
+
+#insimages {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-right: -40px;
+
 }
 
 #introtext {
@@ -84,6 +148,21 @@ a:hover {
   font-family: Pressura-Mono, monospace;
   font-size: 18px;
   margin-bottom: 10vw;
+}
+
+#instruction{
+  align-self: flex-start;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  width:70vw;
+  color:#aaaaaa;
+  padding-left: 8vw;
+  padding-right: 30vw;
+  font-family: Pressura-Mono, monospace;
+  font-size: 18px;
+  margin-bottom: 0vw;
+  overflow-y: visible;
+  transition: all 0.2s ease;
 }
 
 
@@ -188,6 +267,7 @@ a:hover {
   font-size: 15px;
   list-style: none;
   color:#ffe433;
+  z-index: 5;
 }
 
 
@@ -221,8 +301,17 @@ a:hover {
     margin-top: 4vh;
   }
 
-  #intro {
+  #intro, #input {
     flex-direction:column;
+  }
+
+
+  #input{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-right: 50vw;
+    justify-content: flex-start;
+    overflow-y: visible;
   }
 
   #wordmark {
@@ -233,10 +322,29 @@ a:hover {
     margin-bottom: 0;
   }
 
-  #introtext {
-    padding-left: 20vw;
-    padding-right: 20vw;
+  #instalogo {
+    width:50px;
+    float: left;
+    margin-left: 15vw;
+    margin-right:80vw;
+    margin-bottom: 0;
+  }
+
+  #introtext, #instruction {
+    padding-left: 22vw;
+    padding-right: 22vw;
     padding-top: 20px;
+  }
+
+  #instruction {
+    align-self: center;
+  }
+
+  .post {
+    width:32vw;
+    height:32vw;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 
 }
@@ -281,11 +389,26 @@ a:hover {
     margin-right:70%;
   }
 
-  #introtext {
+  #instalogo {
+    width:50px;
+    float: left;
+    margin-left: 20vw;
+    margin-right:80vw;
+    margin-bottom: 0;
+  }
+
+  #introtext, #instruction  {
     padding-left: 18vw;
     padding-right: 18vw;
     padding-top: 20px;
     font-size:15px;
+  }
+
+  .post {
+    width:69vw;
+    height:69vw;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
 }

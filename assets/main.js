@@ -9,7 +9,7 @@ var elIntrotext = document.getElementById("introtext");
 
 //reveal about
 function change1(){
-    
+
     if (elAbout.textContent=="about") {
       elAbout.textContent = "close";
       elAbout.style.color = '#ffe433';
@@ -19,6 +19,7 @@ function change1(){
       $('#intro').css("z-index", 3);
       $('#footer').css("z-index", 4);
       $('#copyright').css("z-index", 3);
+
     }
     else {
       elAbout.textContent = "about";
@@ -31,8 +32,40 @@ function change1(){
 
 };
 
+//reveal about
+function change2(){
+
+    if (elShare.textContent=="input") {
+      elShare.textContent = "close";
+      elShare.style.color = '#ffe433';
+      document.body.style.overflowY = 'visible';
+      $('#input').addClass('appear');
+      $('#maincontainer').addClass('fade');
+      $('#about').addClass('fade');
+      $('#input').css("z-index", 3);
+      $('#footer').css("z-index", 4);
+      $('#copyright').css("z-index", 3);
+      document.body.style.backgroundColor = '#444444';
+      elPrompt.style.color = '#ffe433';
+      elSymbol.style.fill = '#ffe433';
+      elCopyright.style.color = 'white';
+      elFooter.style.color = '#ffe433';
+    }
+    else {
+      elShare.textContent = "input";
+      document.body.style.overflowY = 'hidden';
+      $('#input').removeClass('appear');
+      $('#maincontainer').removeClass('fade');
+      $('#about').removeClass('fade');
+      $('#input').css("z-index", -2);
+      elShare.style.color = '';
+      window.scrollTo(0, 0);
+    };
+
+};
+
 //All the adjective
-var adjective = ['a porous','a matte','a static','a terrifying','a boring','an un-designed','a delicious','a festive','a subtle','a gross','an ugly','a beautiful','an repulsive','a hideous','a delectable','a whimsical','a quizzical','an radical','a mossy','a broken','a tender','an adoreble','a nasty','a shocking','a soft','an old','a charismatic','a cute','a gigantic','a funny','a delicate','a psychedelic','an expressive','a confusing','an amped','a strange','a foreign','a tinted','an organic','an austere','a quirky','a gentle'];
+var adjective = ['a porous','a matte','a static','a terrifying','a boring','an un-designed','a delicious','a festive','a subtle','a gross','an ugly','a beautiful','a repulsive','a hideous','a delectable','a whimsical','a quizzical','a radical','a mossy','a broken','a tender','an adorable','a nasty','a shocking','a soft','an old','a charismatic','a cute','a gigantic','a funny','a delicate','a psychedelic','an expressive','a confusing','an amped','a strange','a foreign','a tinted','an organic','an austere','a quirky','a gentle'];
 
 //All the medium
 var medium = ['label','button','web icon','flyer','poster','booklet','album cover','bookmark','sign','billboard','website','magazine cover','logo','typeface','magazine','trailer','podcast','app','packaging','virtual element','road sign','graphic tee','prototype','mockup','microsite','pattern','ID'];
@@ -41,13 +74,13 @@ var medium = ['label','button','web icon','flyer','poster','booklet','album cove
 var subject = ['an animal charity','a discovery','an electronic bike','an exercise class','a conceptual chair','a service cart','a trash can','a restaurant','a water bottle','a treadmill','an archive','a library','net art','water pollution','deforestation','animal cruelty','a frisbee golf club','a child hunger organization','a curiosity museum','a laptop','a conspicuous consumption','human population growth','DNA testing'];
 
 //All the audience
-var audience = ['parents','aliens','millennials','distracted colleagues','toddlers','grandma','patients','kids','babies','foreigners','teenagers','unsighted people','hybrid designers','internet users','day dreamers','the board members','at-risk teens','baby boomers'];
+var audience = ['parents','aliens','millennials','distracted colleagues','toddlers','grandma','patients','kids','babies','foreigners','teenagers','hybrid designers','internet users','day dreamers','the board members','at-risk teens','baby boomers'];
 
 //All the colors
 var pjcolor = ['silver','teal','olive','maroon','gold','black','white','navy blue','orange','mustard yellow','hot pink','baby blue'];
 
 //All the typefaces
-var pjtypeface = ['an old style typeface','a transitional serif typeface','a modern typeface','a slab serif typeface','a humanist sans serif typeface','a transitional sans serif typeface','a geometric sans serif typeface','hand lettering'];
+var pjtypeface = ['an old style typeface','a transitional serif typeface','a modern typeface','a slab-serif typeface','a humanist sans-serif typeface','a transitional sans-serif typeface','a geometric sans-serif typeface','hand lettering'];
 
 function generate(){
 
