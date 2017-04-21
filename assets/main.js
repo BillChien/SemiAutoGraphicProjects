@@ -77,7 +77,7 @@ var subject = ['an animal charity','a discovery','an electronic bike','an exerci
 var audience = ['parents','aliens','millennials','distracted colleagues','toddlers','grandma','patients','kids','babies','foreigners','teenagers','hybrid designers','internet users','day dreamers','the board members','at-risk teens','baby boomers'];
 
 //All the colors
-var pjcolor = ['silver','teal','olive','maroon','gold','black','white','navy blue','orange','mustard yellow','hot pink','baby blue'];
+var pjcolor = ['silver','teal','olive','maroon','gold','black','white','navy blue','orange','mustard yellow','hot pink','baby blue','new leaf green','turquoise green','beige','grey','off-white','lilac','steel blue','chartreuse'];
 
 //All the typefaces
 var pjtypeface = ['an old style typeface','a transitional serif typeface','a modern typeface','a slab-serif typeface','a humanist sans-serif typeface','a transitional sans-serif typeface','a geometric sans-serif typeface','hand lettering'];
